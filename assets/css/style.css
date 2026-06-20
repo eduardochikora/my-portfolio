@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Cor de fundo */
+    --bg-color-primary: #0d1117;
+
+    /* Cores principais */
+    --color-primary: #3b82f6;
+
+    /* Cores de texto */
+    --color-text-primary: #8b949e;
+    --color-text-secondary: #fff;
+
+    /* Cor de borda */
+    --color-border-primary: #ffffff1c;
+
+    /* Cor de box-shadow */
+    --color-shadow: #001230;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color-primary);
+}
+
+header {
+    width: 100%;
+    background-color: var(--bg-color-primary);
+    border-bottom: 1px solid var(--color-border-primary);
+    position: fixed;
+    box-shadow: 0 5px 10px var(--color-shadow);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2rem;
+}
+
+.header-container > a {
+    text-decoration: none;
+    font-size: 1.43rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 1.7rem;
+    list-style: none;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 400;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 4rem;
+    max-width: 1200px;
+    min-height: 90vh;
+    padding-top: 7rem;
+}
+
+.hero-container img {
+    max-width: 320px;
+    border-radius: 42% 58% 67% 33% / 65% 49% 51% 35%; 
+    box-shadow: 0 0 20px 15px var(--color-shadow);
+}
+
+.hero-container h1 {
+    font-size: 2.7rem;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+}
+
+.hero-container h2 {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-links {
+    margin-top: 2rem;
+}
+
+.hero-links ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    padding: 0.65rem 1.4rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    box-shadow: 0 0 15px 2px var(--color-shadow);
+}
+
+.btn-primary:hover {
+    background-color: #0162fd;
+}
+
+.btn-secondary {
+    border: 1px solid var(--color-border-primary);
+}
+
+.btn-secondary:hover {
+    border-color: var(--color-primary);
+}
+
+
