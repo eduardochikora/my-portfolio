@@ -35,7 +35,6 @@
     <main>
         <section>
             <div class="hero-container">
-                <img src="assets/img/avatar.jpeg" alt="Avatar de Eduardo">
                 <div class="hero-info">
                     <p>Olá, eu sou</p>
                     <h1>
@@ -57,73 +56,76 @@
                         </ul>
                     </div>
                 </div>
+                <img src="assets/img/avatar.jpeg" alt="Avatar de Eduardo">
             </div>
         </section>
         <section>
-            <div>
-                <p>SOBRE MIM</p>
-                <h2>Quem sou eu</h2>
-                <div>
+            <div class="section-container">
+                <p class="section-label">SOBRE MIM</p>
+                <h2 class="section-title">Quem sou eu</h2>
+                <div class="section-description">
                     <p>
                         Eu sou <strong>Eduardo Chikora</strong>, desenvolvedor front-end apaixonado 
                         por criar interfaces modernas e funcionais.
                         Tenho conhecimento e experiência no desenvolvimento front-end adquiridos através 
-                        de projetos pessoais que aprimoram minhas habilidades.
-                        Atualmente curso Análise e Desenvolvimento de Sistemas, o que me proporciona uma base
-                        sólida tanto na parte técnica quanto lógica por trás das aplicações.
+                        de projetos pessoais que aprimoram minhas habilidades.  
+                    </p>
+                    <p>
+                        Atualmente curso Análise e Desenvolvimento de Sistemas, o que me proporciona 
+                        uma base sólida tanto na parte técnica quanto lógica por trás das aplicações.
                     </p>
                 </div>
             </div>
         </section>
         <section>
-            <div>
-                <p>HABILIDADES</p>
-                <h2>Tecnologias & Linguagens</h2>
-                <div>
-                    <article>
-                        <div>
-                            <img src="assets/img/tech/html5.svg" alt="Html5">
+            <div class="section-container">
+                <p class="section-label">HABILIDADES</p>
+                <h2 class="section-title">Tecnologias & Linguagens</h2>
+                <div class="skills-cards">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/tech/html5.svg" alt="HTML5">
                         </div>
                         <h3>HTML</h3>
                     </article>
-                    <article>
-                        <div>
-                            <img src="assets/img/tech/css3.svg" alt="Css3">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/tech/css3.svg" alt="CSS3">
                         </div>
                         <h3>CSS</h3>
                     </article>
-                    <article>
-                        <div>
-                            <img src="assets/img/tech/javascript.svg" alt="Javascript">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/tech/javascript.svg" alt="JavaScript">
                         </div>
                         <h3>JavaScript</h3>
                     </article>
-                    <article>
-                        <div>
+                    <article class="skill-card">
+                        <div class="skill-icon">
                             <img src="assets/img/tech/react.svg" alt="React">
                         </div>
                         <h3>React</h3>
                     </article>
-                    <article>
-                        <div>
-                            <img src="assets/img/tech/tailwindcss.svg" alt="Tailwindcss">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/tech/tailwindcss.svg" alt="Tailwind CSS">
                         </div>
                         <h3>TailwindCSS</h3>
                     </article>
-                    <article>
-                        <div>
-                            <img src="assets/img/tech/styledcomponents.svg" alt="Styled-components">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <img src="assets/img/tech/styledcomponents.svg" alt="Styled Components">
                         </div>
                         <h3>Styled Components</h3>
                     </article>
-                    <article>
-                        <div>
+                    <article class="skill-card">
+                        <div class="skill-icon">
                             <img src="assets/img/tech/git.svg" alt="Git">
                         </div>
                         <h3>Git</h3>
                     </article>
-                    <article>
-                        <div>
+                    <article class="skill-card">
+                        <div class="skill-icon">
                             <img src="assets/img/tech/figma.svg" alt="Figma">
                         </div>
                         <h3>Figma</h3>
@@ -135,46 +137,48 @@
             <div>
                 <p>PROJETOS</p>
                 <h2>O que já construí</h2>
-                <article>
-                    <h3>MovieList</h3>
-                    <p>
-                        Aplicação que consome a API do TMDB que exibe um
-                        banner inicial em destaque e uma listagem de filmes.
-                    </p>
-                    <div>
-                        <ul>
-                            <li>React</li>
-                            <li>TailwindCSS</li>  
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <h3>Bloco de Notas</h3>
-                    <p>
-                        Aplicação de bloco de notas com criação, edição e exclusão
-                        de anotações, com persistência no localStorage.
-                    </p>
-                    <div>
-                        <ul>
-                            <li>React</li>
-                            <li>Styled-components</li>  
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <h3>Carrinho de Compras</h3>
-                    <p>
-                        Carrinho de compras em HTML, CSS e JavaScript com 12 itens, adição e
-                        remoção de produtos e cálculo automático do valor total e frete.
-                    </p>
-                    <div>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                </article>
+                <div>
+                    <article>
+                        <h3>MovieList</h3>
+                        <p>
+                            Aplicação que consome a API do TMDB que exibe um
+                            banner inicial em destaque e uma listagem de filmes.
+                        </p>
+                        <div>
+                            <ul>
+                                <li>React</li>
+                                <li>TailwindCSS</li>  
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Bloco de Notas</h3>
+                        <p>
+                            Aplicação de bloco de notas com criação, edição e exclusão
+                            de anotações, com persistência no localStorage.
+                        </p>
+                        <div>
+                            <ul>
+                                <li>React</li>
+                                <li>Styled-components</li>  
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Carrinho de Compras</h3>
+                        <p>
+                            Carrinho de compras em HTML, CSS e JavaScript com 12 itens, adição e
+                            remoção de produtos e cálculo automático do valor total e frete.
+                        </p>
+                        <div>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>

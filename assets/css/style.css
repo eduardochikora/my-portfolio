@@ -4,6 +4,7 @@
     /* Cores de fundo */
     --bg-color-primary: #131a24;
     --bg-color-secondary: #232b35;
+    --bg-color-tertiary: #0b2f6966;
 
     /* Cores principais */
     --color-primary: #3b82f6;
@@ -12,11 +13,12 @@
     --color-text-primary: #8b949e;
     --color-text-secondary: #fff;
 
-    /* Cor de borda */
+    /* Cores de borda */
     --color-border-primary: #ffffff1c;
+    --color-border-secondary: #3b82f666;
 
     /* Cor de box-shadow */
-    --color-shadow: #001a46;
+    --color-shadow: #001b49;
 }
 
 * {
@@ -39,6 +41,7 @@ header {
     background-color: var(--bg-color-primary);
     border-bottom: 1px solid var(--color-border-primary);
     position: fixed;
+    padding: 1.4rem 1.5rem;
 }
 
 .header-container {
@@ -47,7 +50,6 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.4rem 0;
 }
 
 .header-container > a {
@@ -55,6 +57,7 @@ header {
     font-size: 1.43rem;
     color: var(--color-text-secondary);
     font-weight: 500;
+    outline: none;
     transition: all 0.3s ease;
 }
 
@@ -68,6 +71,7 @@ header {
     text-decoration: none;
     color: var(--color-text-primary);
     font-weight: 400;
+    outline: none;
     transition: all 0.3s ease;
 }
 
@@ -75,18 +79,23 @@ header {
     color: var(--color-primary);
 }
 
+section {
+    padding: 1.5rem;
+}
+
 .hero-container {
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    gap: 4rem;
     max-width: 1200px;
     min-height: 90vh;
     padding-top: 7rem;
 }
 
 .hero-container img {
-    max-width: 320px;
+    max-width: 370px;
+    justify-self: center;
     border-radius: 42% 58% 67% 33% / 65% 49% 51% 35%; 
     box-shadow: 0 0 20px 15px var(--color-shadow);
 }
@@ -94,14 +103,21 @@ header {
 .hero-container h1 {
     font-size: 2.7rem;
     letter-spacing: 0.02em;
-    color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary), #3a8fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .hero-container span {
+    background: none;
+    -webkit-text-fill-color: initial;
     color: var(--color-text-secondary);
 }
 
 .hero-container h2 {
+    font-size: 1.35rem;
     color: var(--color-text-primary);
     font-weight: 500;
 }
@@ -114,8 +130,8 @@ header {
 .hero-info p {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--color-primary);
-    letter-spacing: 0.04em;
+    color: var(--color-text-primary);
+    letter-spacing: 0.02em;
     margin-bottom: 0.5rem;
 }
 
@@ -135,9 +151,9 @@ header {
     gap: 0.5rem;
     color: var(--color-text-secondary);
     font-weight: 400;
-    padding: 0.7rem 1rem;
+    padding: 0.8rem 1.3rem;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: all 0.7s ease;
 }
 
@@ -157,4 +173,74 @@ header {
     border-color: var(--color-primary);
 }
 
+.section-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    letter-spacing: 0.07em;
+}
+
+.section-title {
+    color: var(--color-text-secondary);
+    letter-spacing: 0.03em;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+    max-width: 1200px;
+    padding-top: 3.5rem;
+}
+
+.section-description {
+    background-color: var(--bg-color-secondary);
+    max-width: 750px;
+    padding: 3rem;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 12px;
+}
+
+.section-description p {
+    color: var(--color-text-secondary);
+    line-height: 1.9;
+}
+
+.skills-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: var(--bg-color-secondary);
+    border: 1px solid var(--color-border-primary);
+    padding: 2.5rem 0;
+    border-radius: 12px;
+}
+
+.skill-card h3 {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.skill-icon {
+    display: flex;
+    background-color: var(--bg-color-tertiary);
+    border: 1px solid var(--color-border-secondary);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 15px #0e244b66;
+}
+
+.skill-icon img {
+    max-width: 52px;    
+    width: 100%;
+}
 
