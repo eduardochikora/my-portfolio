@@ -38,7 +38,7 @@
                 <div class="hero-info">
                     <p>Olá, eu sou</p>
                     <h1>
-                        <span>Eduardo</span> Chikora
+                        Eduardo <span>Chikora</span>
                     </h1>
                     <h2>Desenvolvedor Front-end</h2>
                     <div class="hero-links">
@@ -60,135 +60,150 @@
             </div>
         </section>
         <section>
-            <div class="section-container">
+            <div class="section-container" id="sobre">
                 <p class="section-label">SOBRE MIM</p>
                 <h2 class="section-title">Quem sou eu</h2>
                 <div class="section-description">
                     <p>
-                        Eu sou <strong>Eduardo Chikora</strong>, desenvolvedor front-end apaixonado 
+                        Sou <strong>Eduardo Chikora</strong>, desenvolvedor front-end apaixonado 
                         por criar interfaces modernas e funcionais.
                         Tenho conhecimento e experiência no desenvolvimento front-end adquiridos através 
-                        de projetos pessoais que aprimoram minhas habilidades.  
-                    </p>
-                    <p>
+                        de projetos pessoais que aprimoram minhas habilidades.
+                        <br>    
                         Atualmente curso Análise e Desenvolvimento de Sistemas, o que me proporciona 
-                        uma base sólida tanto na parte técnica quanto lógica por trás das aplicações.
+                        uma base sólida tanto na parte técnica quanto lógica por trás das aplicações.  
                     </p>
+                    <img src="assets/img/programming-illustration.svg" alt="Ilustração de um desenvolvedor programando">
                 </div>
             </div>
         </section>
         <section>
-            <div class="section-container">
+            <div class="section-container" id="habilidades">
                 <p class="section-label">HABILIDADES</p>
                 <h2 class="section-title">Tecnologias & Linguagens</h2>
                 <div class="skills-cards">
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-html">
+                        <div class="skill-icon icon-html">
                             <img src="assets/img/tech/html5.svg" alt="HTML5">
                         </div>
-                        <h3>HTML</h3>
+                        <h4>HTML</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-css">
+                        <div class="skill-icon icon-css">
                             <img src="assets/img/tech/css3.svg" alt="CSS3">
                         </div>
-                        <h3>CSS</h3>
+                        <h4>CSS</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-js">
+                        <div class="skill-icon icon-js">
                             <img src="assets/img/tech/javascript.svg" alt="JavaScript">
                         </div>
-                        <h3>JavaScript</h3>
+                        <h4>JavaScript</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-react">
+                        <div class="skill-icon icon-react">
                             <img src="assets/img/tech/react.svg" alt="React">
                         </div>
-                        <h3>React</h3>
+                        <h4>React</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-tailwind">
+                        <div class="skill-icon icon-tailwind">
                             <img src="assets/img/tech/tailwindcss.svg" alt="Tailwind CSS">
                         </div>
-                        <h3>TailwindCSS</h3>
+                        <h4>TailwindCSS</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-styled">
+                        <div class="skill-icon icon-styled">
                             <img src="assets/img/tech/styledcomponents.svg" alt="Styled Components">
                         </div>
-                        <h3>Styled Components</h3>
+                        <h4>Styled Components</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-git">
+                        <div class="skill-icon icon-git">
                             <img src="assets/img/tech/git.svg" alt="Git">
                         </div>
-                        <h3>Git</h3>
+                        <h4>Git</h4>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
+                    <article class="skill-card card-figma">
+                        <div class="skill-icon icon-figma">
                             <img src="assets/img/tech/figma.svg" alt="Figma">
                         </div>
-                        <h3>Figma</h3>
+                        <h4>Figma</h4>
                     </article>
                 </div>
             </div>
         </section>
         <section>
-            <div>
-                <p>PROJETOS</p>
-                <h2>O que já construí</h2>
-                <div>
-                    <article>
-                        <h3>MovieList</h3>
+            <div class="section-container" id="projetos">
+                <p class="section-label">PROJETOS</p>
+                <h2 class="section-title">O que já construí</h2>
+                <div class="projects-cards">
+                    <article class="project-card">
+                        <h3>Starbucks Landing Page</h3>
                         <p>
-                            Aplicação que consome a API do TMDB que exibe um
-                            banner inicial em destaque e uma listagem de filmes.
+                            Recriação da landing page do Starbucks com hero 
+                            section e seleção de bebidas.
                         </p>
-                        <div>
+                        <div class="tech-stack">
                             <ul>
-                                <li>React</li>
-                                <li>TailwindCSS</li>  
+                                <li class="tag tag-html">HTML</li>
+                                <li class="tag tag-css">CSS</li>
+                                <li class="tag tag-js">JavaScript</li>
                             </ul>
                         </div>
                     </article>
-                    <article>
-                        <h3>Bloco de Notas</h3>
-                        <p>
-                            Aplicação de bloco de notas com criação, edição e exclusão
-                            de anotações, com persistência no localStorage.
-                        </p>
-                        <div>
-                            <ul>
-                                <li>React</li>
-                                <li>Styled-components</li>  
-                            </ul>
-                        </div>
-                    </article>
-                    <article>
+                    <article class="project-card">
                         <h3>Carrinho de Compras</h3>
                         <p>
                             Carrinho de compras em HTML, CSS e JavaScript com 12 itens, adição e
                             remoção de produtos e cálculo automático do valor total e frete.
                         </p>
-                        <div>
+                        <div class="tech-stack">
                             <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+                                <li class="tag tag-html">HTML</li>
+                                <li class="tag tag-css">CSS</li>
+                                <li class="tag tag-js">JavaScript</li>
                             </ul>
                         </div>
                     </article>
+                    <article class="project-card">
+                        <h3>Bloco de Notas</h3>
+                        <p>
+                            Aplicação de bloco de notas com criação, edição e exclusão
+                            de anotações, com persistência no localStorage.
+                        </p>
+                        <div class="tech-stack">
+                            <ul>
+                                <li class="tag tag-react">React</li>
+                                <li class="tag tag-styled">Styled-components</li>  
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>MovieList</h3>
+                        <p>
+                            Aplicação que consome a API do TMDB que exibe um
+                            banner inicial em destaque e uma listagem de filmes.
+                        </p>
+                        <div class="tech-stack">
+                            <ul>
+                                <li class="tag tag-react">React</li>
+                                <li class="tag tag-tailwind">TailwindCSS</li>  
+                            </ul>
+                        </div>
+                    </article>
+                    
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <div>
-                <h3>Eduardo Chikora</h3>
+        <div class="footer-container" id="contato">
+            <div class="footer-brand">
+                <h2>Eduardo</h2>
                 <p>Desenvolvedor Front-end</p>
             </div>
-            <div>
+            <div class="footer-links">
                 <h3>Navegação</h3>
                 <nav aria-label="Navegação do rodapé">
                     <ul>
@@ -207,7 +222,7 @@
                     </ul>
                 </nav>
             </div>
-            <div>
+            <div class="footer-links">
                 <h3>Contato</h3>
                 <ul>
                     <li>
@@ -217,7 +232,7 @@
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/eduardo-chikora-447233340/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-linkedin"></i> Linkedin
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
                         </a>
                     </li>
                     <li>
@@ -226,7 +241,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>                  
             <small>
                 &copy; 2026 Eduardo Chikora. Todos os direitos reservados.
             </small>
