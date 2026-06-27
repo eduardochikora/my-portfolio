@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header-container">
-            <a href="#">Eduardo</a>
+            <a href="#inicio">Eduardo</a>
             <nav class="header-nav" aria-label="Navegação principal">
                 <ul>
                     <li>
@@ -33,7 +33,7 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="inicio">
             <div class="hero-container">
                 <div class="hero-info">
                     <p>Olá, eu sou</p>
@@ -44,41 +44,75 @@
                     <div class="hero-links">
                         <ul>
                             <li>
-                                <a href="#projetos" class="btn btn-primary"> 
-                                    <i class="fa-solid fa-folder-open"></i> Ver projetos
+                                <a href="https://github.com/eduardochikora" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <i class="fa-brands fa-github"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#contato" class="btn btn-secondary">
-                                    <i class="fa-solid fa-paper-plane"></i> Entre em contato
+                                <a href="https://www.linkedin.com/in/eduardo-chikora-447233340/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://mail.google.com/mail/?view=cm&to=eduardochicora7@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <i class="fa-regular fa-envelope"></i>
                                 </a>
                             </li>
                         </ul>
+                        <a href="#projetos" class="link-projects">
+                            <i class="fa-solid fa-arrow-right"></i> Ver projetos
+                        </a>
                     </div>
                 </div>
                 <img src="assets/img/avatar.jpeg" alt="Avatar de Eduardo">
             </div>
         </section>
-        <section>
-            <div class="section-container" id="sobre">
+        <section id="sobre">
+            <div class="section-container">
                 <p class="section-label">SOBRE MIM</p>
                 <h2 class="section-title">Quem sou eu</h2>
-                <div class="section-description">
-                    <p>
-                        Sou <strong>Eduardo Chikora</strong>, desenvolvedor front-end apaixonado 
-                        por criar interfaces modernas e funcionais.
-                        Tenho conhecimento e experiência no desenvolvimento front-end adquiridos através 
-                        de projetos pessoais que aprimoram minhas habilidades.
-                        <br>    
-                        Atualmente curso Análise e Desenvolvimento de Sistemas, o que me proporciona 
-                        uma base sólida tanto na parte técnica quanto lógica por trás das aplicações.  
-                    </p>
-                    <img src="assets/img/programming-illustration.svg" alt="Ilustração de um desenvolvedor programando">
+                <div class="about">
+                    <div class="about-info">
+                        <img src="assets/img/programming-illustration.svg" alt="Ilustração de um desenvolvedor programando">
+                        <div class="about-meta">
+                            <div class="about-meta-col">
+                                <dl>
+                                    <dt>DISPONÍVEL</dt>
+                                    <dd>Aberto a oportunidades</dd>
+            
+                                    <dt>LOCALIZAÇÃO</dt>
+                                    <dd>SC, Brasil</dd>
+                                </dl>
+                            </div>
+                            <div class="about-meta-col">
+                                <dl>
+                                    <dt>FOCO ATUAL</dt>
+                                    <dd>Front-end | Projetos pessoais</dd>
+        
+                                    <dt>FORMAÇÃO</dt>
+                                    <dd>ADS | Em andamento</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <p>
+                            Sou <strong>Eduardo Chikora</strong>, desenvolvedor front-end apaixonado
+                            por criar interfaces modernas e funcionais.
+                            Minha experiência foi construída principalmente por meio de projetos pessoais e trabalhos freelancer, 
+                            nos quais coloco em prática meus conhecimentos e continuo aprimorando minhas habilidades.
+                        </p>
+                        <p>
+                            Atualmente curso <strong>Análise e Desenvolvimento de Sistemas</strong>, fortalecendo minha base 
+                            em lógica, desenvolvimento de software e resolução de problemas. Busco minha primeira oportunidade 
+                            na área para contribuir com projetos reais e evoluir continuamente na área.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="section-container" id="habilidades">
+        <section id="habilidades">
+            <div class="section-container">
                 <p class="section-label">HABILIDADES</p>
                 <h2 class="section-title">Tecnologias & Linguagens</h2>
                 <div class="skills-cards">
@@ -133,15 +167,15 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="section-container" id="projetos">
+        <section id="projetos">
+            <div class="section-container">
                 <p class="section-label">PROJETOS</p>
                 <h2 class="section-title">O que já construí</h2>
                 <div class="projects-cards">
                     <article class="project-card">
                         <h3>Starbucks Landing Page</h3>
                         <p>
-                            Recriação da landing page do Starbucks com hero 
+                            Recriação da landing page do Starbucks com hero
                             section e seleção de bebidas.
                         </p>
                         <div class="tech-stack">
@@ -175,7 +209,7 @@
                         <div class="tech-stack">
                             <ul>
                                 <li class="tag tag-react">React</li>
-                                <li class="tag tag-styled">Styled-components</li>  
+                                <li class="tag tag-styled">Styled-components</li>
                             </ul>
                         </div>
                     </article>
@@ -188,17 +222,17 @@
                         <div class="tech-stack">
                             <ul>
                                 <li class="tag tag-react">React</li>
-                                <li class="tag tag-tailwind">TailwindCSS</li>  
+                                <li class="tag tag-tailwind">TailwindCSS</li>
                             </ul>
                         </div>
                     </article>
-                    
+
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-container" id="contato">
+    <footer id="contato">
+        <div class="footer-container">
             <div class="footer-brand">
                 <h2>Eduardo</h2>
                 <p>Desenvolvedor Front-end</p>
@@ -208,16 +242,19 @@
                 <nav aria-label="Navegação do rodapé">
                     <ul>
                         <li>
-                            <a href="#">Sobre mim</a>
+                            <a href="#inicio">Início</a>
                         </li>
                         <li>
-                            <a href="#">Habilidades</a>
+                            <a href="#sobre">Sobre mim</a>
                         </li>
                         <li>
-                            <a href="#">Projetos</a>
+                            <a href="#habilidades">Habilidades</a>
                         </li>
                         <li>
-                            <a href="#">Contato</a>
+                            <a href="#projetos">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#contato">Contato</a>
                         </li>
                     </ul>
                 </nav>
@@ -226,22 +263,27 @@
                 <h3>Contato</h3>
                 <ul>
                     <li>
-                        <a href="https://github.com/eduardochikora" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
+                        <a href="https://github.com/eduardochikora" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/eduardo-chikora-447233340/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
+                        <a href="https://www.linkedin.com/in/eduardo-chikora-447233340/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li>
-                        <a href="https://mail.google.com/mail/?view=cm&to=eduardochicora7@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-envelope"></i> Email
-                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=eduardochicora7@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
                     </li>
                 </ul>
-            </div>                  
+            </div>
+            <div class="footer-links">
+                <h3>Mais</h3>
+                <ul>
+                    <li>
+                        <a href="assets/curriculo.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/eduardochikora/my-portfolio" target="_blank" rel="noopener noreferrer">Repositório do Portfólio</a>
+                    </li>
+                </ul>
+            </div>
             <small>
                 &copy; 2026 Eduardo Chikora. Todos os direitos reservados.
             </small>
