@@ -14,7 +14,7 @@
     <header>
         <div class="header-container">
             <a href="#inicio">Eduardo</a>
-            <nav class="header-nav" aria-label="Navegação principal">
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li>
                         <a href="#sobre">Sobre mim</a>
@@ -30,8 +30,28 @@
                     </li>
                 </ul>
             </nav>
+            <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </button>
         </div>
+            <nav class="nav-mobile" aria-label="Navegação mobile">
+                <ul>
+                    <li>
+                        <a href="#sobre">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a href="#habilidades">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#projetos">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
+    
     <main>
         <section id="inicio">
             <div class="hero-container">
@@ -290,5 +310,7 @@
         </div>
     </footer>
 </body>
+
+<script src="assets/js/menuToggle.js"></script>
 
 </html>
