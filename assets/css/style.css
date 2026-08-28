@@ -256,7 +256,7 @@ section {
     box-shadow: 0 0 12px var(--color-shadow);
     color: var(--color-text-secondary);
     font-weight: 400;
-    padding: 0.9rem 2.5rem;
+    padding: 0.8rem 2.5rem;
     text-decoration: none;
     border-radius: 12px;
     letter-spacing: 0.02em;
@@ -748,6 +748,13 @@ footer {
 }
 
 @media screen and (max-width: 578px) {
+
+    header,
+    section,
+    footer {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
 
     .hero-container img {
         max-width: 270px;
